@@ -31,6 +31,11 @@ export class CadastroProdutoComponent implements OnInit {
   ngOnInit() {
     window.scroll(0, 0);
   }
+  // Eu coloquei uma função produto categoria para receber do java Script
+  produtoCategoria(event: any){
+    this.categoria.id = event.target.value
+  }
+  
   cadastrarProduto() {
     this.categoria.id = this.idCategoria
     this.produto.categoria = this.categoria
