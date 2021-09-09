@@ -10,6 +10,10 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { ProdutoComponent } from './produto/produto.component';
+import { CategoriaComponent } from './categoria/categoria.component';
+import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
+import { TodosProdutosComponent } from './produto/todos-produtos/todos-produtos.component';
 
 
 
@@ -21,6 +25,10 @@ import { InicioComponent } from './inicio/inicio.component';
     LoginComponent,
     CadastroComponent,
     InicioComponent,
+    ProdutoComponent,
+    CategoriaComponent,
+    CadastroProdutoComponent,
+    TodosProdutosComponent,
   ],
   imports: [
     BrowserModule,

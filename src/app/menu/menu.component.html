@@ -4,8 +4,7 @@
             <img src="https://www.dhresource.com/0x0/f2/albu/g7/M00/55/41/rBVaSluWHUmAUSLfAAAo5wPsVL4483.jpg/realistic-fake-orange-artificial-lifelike.jpg
                     " width="30" height="30" alt="">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -19,11 +18,19 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Carrinho</a>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Usuário
+  </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item " href="# ">Logar</a>
+
+                            <a class="dropdown-item " routerLink="/cadastro-produto" ref="#">cadastrar produto</a>
+                        </div>
+                    </div>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="# ">Carrinho</a>
                     </li>
                 </ul>
 
