@@ -1,42 +1,46 @@
 <div class="row d-flex">
-    <div class="col-md-12 justify">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <img src="https://www.dhresource.com/0x0/f2/albu/g7/M00/55/41/rBVaSluWHUmAUSLfAAAo5wPsVL4483.jpg/realistic-fake-orange-artificial-lifelike.jpg
+  <div class="col-md-12 justify">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <img src="https://www.dhresource.com/0x0/f2/albu/g7/M00/55/41/rBVaSluWHUmAUSLfAAAo5wPsVL4483.jpg/realistic-fake-orange-artificial-lifelike.jpg
                     " width="30" height="30" alt="">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
 
-                <form class="form-inline my-2 my-lg-0 ">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-                </form>
-                <ul class="navbar-nav  mr-5 ">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
-                    </li>
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Usuário
-  </a>
+        <form class="form-inline my-2 my-lg-0 ">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+        <ul class="navbar-nav  mr-5 ">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+          </li>
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Usuário
+            </a>
 
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item " href="# ">Logar</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item " href="# ">Logar</a>
 
-                            <a class="dropdown-item " routerLink="/cadastro-produto" ref="#">cadastrar produto</a>
+              <a class="dropdown-item " routerLink="/cadastro-produto" ref="#">cadastrar produto</a>
 
-                            <a class="dropdown-item " routerLink="/produto-edit/4" ref="#">atualizar produto</a>
-                        </div>
-                    </div>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Carrinho</a>
-                    </li>
-                </ul>
+              <a class="dropdown-item " [routerLink]="['/produto-edit/id']" ref="#">atualizar produto</a>
 
+              <a class="dropdown-item " [routerLink]="['/produto-delete/id']" ref="#">apagar produto</a>
             </div>
-        </nav>
-    </div>
+          </div>
+          <li class="nav-item ">
+            <a class="nav-link " href="# ">Carrinho</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </div>
 </div>

@@ -13,9 +13,9 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
-import { TodosProdutosComponent } from './produto/todos-produtos/todos-produtos.component';
+import { TodosProdutosComponent } from './todos-produtos/todos-produtos.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
-import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 
 
 
@@ -32,7 +32,7 @@ import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component
     CadastroProdutoComponent,
     TodosProdutosComponent,
     ProdutoEditComponent,
-    UsuarioEditComponent,
+    ProdutoDeleteComponent,
   ],
   imports: [
     BrowserModule,

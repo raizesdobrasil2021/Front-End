@@ -41,9 +41,9 @@ export class ProdutoEditComponent implements OnInit {
     this.authService.refreshToken()
     this.produtoService.refreshToken()
     this.categoriaService.refreshToken()
-    
+
     let item = this.route.snapshot.params['id']
-    this.findPostagemById(item)
+    this.findProdutoById(item)
 
     this.getAllCategoria()
     this.findAllCategorias()
@@ -70,7 +70,7 @@ export class ProdutoEditComponent implements OnInit {
     })
   }
 
-  findPostagemById(id: number) {
+  findProdutoById(id: number) {
     this.produtoService.getByIdProduto(id).subscribe((resp: ProdutoReq)=> {
       this.produto = resp
     })
