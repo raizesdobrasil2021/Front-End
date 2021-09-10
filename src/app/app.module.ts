@@ -14,6 +14,8 @@ import { ProdutoComponent } from './produto/produto.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { TodosProdutosComponent } from './produto/todos-produtos/todos-produtos.component';
+import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 
 
 
@@ -29,6 +31,8 @@ import { TodosProdutosComponent } from './produto/todos-produtos/todos-produtos.
     CategoriaComponent,
     CadastroProdutoComponent,
     TodosProdutosComponent,
+    ProdutoEditComponent,
+    UsuarioEditComponent,
   ],
   imports: [
     BrowserModule,
