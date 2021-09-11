@@ -68,7 +68,7 @@ console.log(this.produto)
       alert("Cadastrado com sucesso")
       this.findAllCategoria()
       this.produto = new ProdutoReq
-      this.router.navigate(['/todos-produtos'])
+      this.router.navigate(['/meus-produtos'])
     }, erro => {
         alert("Preecha os campos corretamente")
     })
