@@ -1,3 +1,4 @@
+import { RouterModule, } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,7 +17,6 @@ import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.co
 import { TodosProdutosComponent } from './todos-produtos/todos-produtos.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
-
 
 
 @NgModule({
@@ -38,7 +38,8 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

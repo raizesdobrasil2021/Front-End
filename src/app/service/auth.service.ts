@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { UsuarioReq } from '../model/UsuarioReq';
 import { environment } from 'src/environments/environment.prod';
+import { ProdutoReq } from '../model/ProdutoReq';
 
 @Injectable({
   providedIn: 'root'
@@ -28,12 +29,13 @@ entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
 cadastrar(usuario: UsuarioReq): Observable<UsuarioReq>{
   return this.http.post<UsuarioReq>('https://raizesdobrasil.herokuapp.com/usuarios/cadastrar', usuario)
 }
+
 logado(){
   let ok: boolean =false;
   if(environment.token !=""){
     ok=true
   }
   return ok
-  
+
 }
 }
