@@ -1,0 +1,35 @@
+<div class="container fluid">
+
+    <div class="div">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Meus produtos</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- começo todos os produtos -->
+
+
+    <div class="card-columns">
+        <div class="card text-center" *ngFor="let item of usuario.produto">
+            <div class="card-body">
+                <img src="{{item.imagem}}" class="card-title m-0" width="250px" height="150px">
+                <div>
+                    <small class="text-muted"> Categoria: {{ item.categoria.descricao }}</small>
+                </div>
+                <p class="card-text mt-3">{{ item.nome}}</p>
+                <p class="card-text">
+                    <small class="text-muted">
+                        Data de validade do produto{{ item.dtValidade | date: "dd/MM/yyyy" }}
+                    </small>
+                </p>
+                <button class="btn btn-info" [routerLink]="['/produto-edit', item.id]">
+                    Editar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
