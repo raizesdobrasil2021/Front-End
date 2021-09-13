@@ -44,16 +44,5 @@ export class AuthService {
     }
     return ok
 
-
-cadastrar(usuario: UsuarioReq): Observable<UsuarioReq>{
-  return this.http.post<UsuarioReq>('https://raizesdobrasil.herokuapp.com/usuarios/cadastrar', usuario)
 }
-
-logado(){
-  let ok: boolean =false;
-  if(environment.token !=""){
-    ok=true
-  }
-  return ok
-
 }
