@@ -1,3 +1,4 @@
+import { RouterModule, } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +18,6 @@ import { TodosProdutosComponent } from './todos-produtos/todos-produtos.componen
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { MeusProdutosComponent } from './meus-produtos/meus-produtos.component';
-
 
 
 @NgModule({
@@ -40,7 +40,8 @@ import { MeusProdutosComponent } from './meus-produtos/meus-produtos.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

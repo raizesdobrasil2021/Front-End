@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { CategoriaReq } from '../model/CategoriaReq';
+import { ProdutoReq } from '../model/ProdutoReq';
 import { CategoriaService } from '../service/categoria.service';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-categoria',
@@ -10,21 +12,33 @@ import { CategoriaService } from '../service/categoria.service';
   styleUrls: ['./categoria.component.css']
 })
 export class CategoriaComponent implements OnInit {
+  produto: ProdutoReq = new ProdutoReq()
+  listaProduto: ProdutoReq[]
   categoria: CategoriaReq = new CategoriaReq()
-  
   listaCategoria:CategoriaReq[]
+  idCategoria: number
 
   constructor(
+
+    private categoriaService: CategoriaService,
+    private produtoService: ProdutoService,
     private router: Router,
-    private categoriaService: CategoriaService
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
     if (environment.token == "") {
-      this.router.navigate(['/entrar'])
+      this.router.navigate(['/login'])
     }
+    window.scroll(0, 0);
 
-  this.findAllCategorias()
+    this.produtoService.refreshToken()
+    this.categoriaService.refreshToken()
+
+    this.idCategoria = this.route.snapshot.params['id']
+    this.findByIdCategoria()
+    this.findAllProdutos()
+    this.findAllCategorias()
   }
 
   findAllCategorias() {
@@ -32,13 +46,16 @@ export class CategoriaComponent implements OnInit {
       this.listaCategoria = resp
     })
   }
-
-  cadastrarCategoria() {
-    this.categoriaService.postCategoria(this.categoria).subscribe((resp: CategoriaReq) => {
+  findByIdCategoria() {
+    this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: CategoriaReq) => {
       this.categoria = resp
-      alert('Categoria cadastrado com sucesso!')
-      this.findAllCategorias()
-      this.categoria = new CategoriaReq()
     })
   }
+  findAllProdutos() {
+    this.produtoService.getAllProdutos().subscribe((resp: ProdutoReq[]) => {
+      this.listaProduto = resp
+    })
+  }
+
+
 }
