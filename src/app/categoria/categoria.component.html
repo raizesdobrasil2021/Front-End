@@ -1,30 +1,29 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-  <!--<a routerLink="/inicio" class="text-white text-left">
+<div class="container-fluid my-5">
+    <div class="row">
+        <div class="col-md-12">
+            <!--<a routerLink="/inicio" class="text-white text-left">
     <i class="fa fa-angle-double-left" aria-hidden="true"></i> início
   </a>-->
-      <h1 class="fs-54 text-center">{{categoria.descricao}}</h1>
+            <h1 class="fs-54 text-center my-3">{{categoria.descricao}}</h1>
+        </div>
     </div>
-  </div>
 </div>
 
 
-<div class="container">
-<div class="row">
-  <div class="div" *ngFor="let produto of categoria.produto">
-    <div class="card" [routerLink]="['/produto', produto.id]">
-      <div class="d-flex justify-content-center">
-        <img class="img-fluid" alt="Imagem do produto" src="{{produto.imagem}}">
-      </div>
-      <div class="card-body text-center">
-        <h4 class="nome">{{produto.nome}}</h4>
-        <p id="preco">R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
-        <a class="btn btn-verde w-100" [routerLink]="['/produto',produto.id]">Ver produto</a>
-      </div>
+<div class="container ">
+    <div class="row">
+        <div class=" ml-3" *ngFor="let produto of categoria.produto">
+            <div class="card" [routerLink]="['/produto', produto.id]">
+                <div class="d-flex justify-content-center">
+                    <img class="img-fluid" alt="Imagem do produto" width="250px" height="150px" src="{{produto.imagem}}">
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="nome">{{produto.nome}}</h4>
+                    <p id="preco">R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
+                    <a class="btn btn-verde w-100" [routerLink]="['/produto',produto.id]">Ver produto</a>
+                </div>
+            </div>
+
+        </div>
     </div>
-
-  </div>
 </div>
-</div>
-

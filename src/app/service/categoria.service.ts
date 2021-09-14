@@ -25,25 +25,25 @@ export class CategoriaService {
   }
 
   getAllCategoria():Observable<CategoriaReq[]>{
-    return this.http.get<CategoriaReq[]>("https://raizesdobrasil.herokuapp.com/categorias")
+    return this.http.get<CategoriaReq[]>("https://raizesdobrasil.herokuapp.com/categorias",this.token)
   }
   getByIdCategoria(id:number):Observable<CategoriaReq>{
-    return this.http.get<CategoriaReq>(`https://raizesdobrasil.herokuapp.com/categorias/${id}`)
+    return this.http.get<CategoriaReq>(`https://raizesdobrasil.herokuapp.com/categorias/${id}`,this.token)
   }
 
   getAtivoCategoria(ativo:boolean):Observable<CategoriaReq>{
-    return this.http.get<CategoriaReq>(`https://raizesdobrasil.herokuapp.com/categorias/ativo/${ativo}`)
+    return this.http.get<CategoriaReq>(`https://raizesdobrasil.herokuapp.com/categorias/ativo/${ativo}`,this.token)
   }
   getDescricaoCategoria(descricao:string):Observable<CategoriaReq>{
     return this.http.get<CategoriaReq>(`https://raizesdobrasil.herokuapp.com/categorias/decricao/${descricao}`)
   }
 
   postCategoria(categoria: CategoriaReq): Observable<CategoriaReq>{
-    return this.http.post<CategoriaReq>('https://raizesdobrasil.herokuapp.com/categorias', categoria, this.token)
+    return this.http.post<CategoriaReq>('https://raizesdobrasil.herokuapp.com/categorias', categoria,this.token)
   }
 
   putCategoria(categoria: CategoriaReq): Observable<CategoriaReq>{
-    return this.http.put<CategoriaReq>('https://raizesdobrasil.herokuapp.com/categorias', categoria, this.token)
+    return this.http.put<CategoriaReq>('https://raizesdobrasil.herokuapp.com/categorias', categoria,this.token)
   }
 
   deleteCategoria(id: number) {

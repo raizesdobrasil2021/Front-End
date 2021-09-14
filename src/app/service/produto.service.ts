@@ -51,11 +51,11 @@ export class ProdutoService {
   }
 
   putProdutos(produto: ProdutoReq): Observable<ProdutoReq>{
-    return this.http.put<ProdutoReq>('https://raizesdobrasil.herokuapp.com/produtos', produto, this.token)
+    return this.http.put<ProdutoReq>('https://raizesdobrasil.herokuapp.com/produtos', produto,this.token)
   }
 
   deleteProdutos(id: number) {
-    return this.http.delete(`https://raizesdobrasil.herokuapp.com/produtos/${id}`, this.token)
+    return this.http.delete(`https://raizesdobrasil.herokuapp.com/produtos/${id}`,this.token)
   }
 
 }

@@ -1,37 +1,37 @@
-<div class="container fluid">
+<div class="container">
 
-  <div class="div">
+    <div class="div">
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>{{produto.categoria.descricao}}</h1>
+            </div>
+        </div>
+    </div>
+
+    .
 
     <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>{{produto.categoria.descricao}}</h1>
-      </div>
-    </div>
-  </div>
-
-  .
-
-  <div class="row">
-    <div class="col-md-6">
-      <div class="card-deck">
-        <div class="card">
-          <img src="{{produto.imagem}}" alt="">
+        <div class="col-md-6">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="{{produto.imagem}}" alt="">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-md-6">
+        <div class="col-md-6">
 
-      <h5 class="card-title m-0 text-center">{{produto.nome}}</h5>
-      <p class="card-text mt-3 text-center">R$: {{produto.preco}}</p>
-<div class="row">
-  <div class="col-md-12">
-     <p class="card-text mt-3">Quantidade disponível: {{produto.quantidade}}</p>
-  </div>
-</div>
+            <h5 class="card-title m-0 text-center">{{produto.nome}}</h5>
+            <p class="card-text mt-3 text-center">R$: {{produto.preco}}</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="card-text mt-3">Quantidade disponível: {{produto.quantidade}}</p>
+                </div>
+            </div>
 
-      <p class="card-text"><small class="text-muted"> Data de Validade : {{produto.dtValidade | date:
+            <p class="card-text"><small class="text-muted"> Data de Validade : {{produto.dtValidade | date:
           "dd/MM/yyyy"}}</small></p>
+        </div>
     </div>
-  </div>
 </div>
