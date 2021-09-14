@@ -39,6 +39,10 @@ export class AuthService {
       usuario
     );
   }
+    getByUsuario(id: number): Observable<UsuarioReq> {
+      return this.http.get<UsuarioReq>(`https://raizesdobrasil.herokuapp.com/usuarios/${id}`,this.token)
+
+    }
 
   admin() {
     let ok: boolean = false;
