@@ -8,7 +8,7 @@
 
   <div class="row">
     <div class="col-md-12">
-      <h4 class="text-center text-secondary">Você tem certeza que deseja apagar essa pestagem?</h4>
+      <h4 class="text-center text-secondary">Você tem certeza que deseja apagar esse produto?</h4>
     </div>
   </div>
 
@@ -16,10 +16,9 @@
     <div class="col-md-4">
       <div class="card text-center">
         <div class="card-body">
-          <h5 class="card-title m-0">{{produto.imagem}}</h5>
+          <img src= {{produto.imagem}} class="card-title m-0" alt="imagem-produto" width="250px" height="150px">
           <p class="card-text mt-3">{{produto.nome}}</p>
-          <p class="card-text"><small class="text-muted">{{produto.dtValidade| date:'dd/MM/yyyy'}} às {{produto.dtValidade| date:
-              'HH:mm'}}</small></p>
+          <p class="card-text"><small class="text-muted">Data de validade:{{produto.dtValidade| date:'dd/MM/yyyy'}}</small></p>
         </div>
       </div>
     </div>

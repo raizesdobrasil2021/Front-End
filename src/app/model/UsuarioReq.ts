@@ -9,6 +9,5 @@ export class UsuarioReq {
     public tipo: string;
     public dataNascimento: Date;
     public usuario: string;
-    public email: string;
     public produto: ProdutoReq[];
 }

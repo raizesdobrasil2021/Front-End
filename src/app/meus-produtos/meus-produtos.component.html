@@ -26,8 +26,11 @@
                         Data de validade do produto{{ item.dtValidade | date: "dd/MM/yyyy" }}
                     </small>
                 </p>
-                <button class="btn btn-info" [routerLink]="['/produto-edit', item.id]">
+                <button class="btn btn-info mr-2" [routerLink]="['/produto-edit', item.id]">
                     Editar
+                </button>
+                <button class="btn btn-danger"[routerLink]="['/produto-delete',item.id]">
+                    Apagar
                 </button>
             </div>
         </div>
