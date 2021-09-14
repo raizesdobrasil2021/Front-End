@@ -27,13 +27,19 @@ export class CategoriaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+<<<<<<< HEAD
     //if (environment.token == "") {
       //this.router.navigate(['/login'])
      //}
+=======
+    // if (environment.token == "") {
+    //   this.router.navigate(['/login'])
+    //  }
+>>>>>>> 537c220e10532d4e17f2126436b549a256fcf5a6
     window.scroll(0, 0);
 
-    this.produtoService.refreshToken()
-    this.categoriaService.refreshToken()
+    // this.produtoService.refreshToken()
+    // this.categoriaService.refreshToken()
 
     this.idCategoria = this.route.snapshot.params['id']
     this.findByIdCategoria()
