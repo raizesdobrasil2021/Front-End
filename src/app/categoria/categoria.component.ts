@@ -27,9 +27,9 @@ export class CategoriaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    if (environment.token == "") {
-      this.router.navigate(['/login'])
-     }
+    //if (environment.token == "") {
+      //this.router.navigate(['/login'])
+     //}
     window.scroll(0, 0);
 
     this.produtoService.refreshToken()

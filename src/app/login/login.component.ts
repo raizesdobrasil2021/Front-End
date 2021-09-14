@@ -26,9 +26,11 @@ export class LoginComponent implements OnInit {
       this.usuarioLogin = resp
 
       environment.token = this.usuarioLogin.token
-      environment.nome = this.usuarioLogin.nome 
+      environment.nome = this.usuarioLogin.nome
       environment.id = this.usuarioLogin.id
+      environment.tipo = this.usuarioLogin.tipo
 
+      console.log(environment.tipo)
       console.log(environment.token)
       console.log(environment.nome)
       console.log(environment.id)

@@ -1,6 +1,12 @@
+import { UsuarioReq } from './../model/UsuarioReq';
+import { ProdutoReq } from 'src/app/model/ProdutoReq';
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { AuthService } from '../service/auth.service';
+import { CategoriaService } from '../service/categoria.service';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,20 +14,29 @@ import { environment } from 'src/environments/environment.prod';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  produto: ProdutoReq = new ProdutoReq
+
+  usuario: UsuarioReq = new UsuarioReq()
 
   nome = environment.nome
-  id = environment.id;
+  token = environment.token
+  id = environment.id
+  tipo = environment.tipo
+  //tipoUsuario = this.usuario.tipo.
+  //tipoAdministrador = environment.tipoAdministrador
+
+
 
   constructor(
-    private router: Router
+    private http: HttpClient,
+    private router: Router,
+    public authService: AuthService,
+    private categoriaService: CategoriaService,
+    private produtoService: ProdutoService
   ) { }
 
   ngOnInit(): void {
   }
-  sair() {
-    this.router.navigate(['/entrar'])
-    environment.token = ""
-    environment.nome = ""
-    environment.id = 0
   }
-}
+
+

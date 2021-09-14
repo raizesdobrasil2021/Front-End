@@ -30,15 +30,19 @@
             <div class="col-md-2 navbar-nav align-items-center d-flex justify-content-center">
 
                 <div class="dropdown ml-4">
-                    <a class="btn btn-secondary dropdown-toggle" href="# " role="button " id="dropdownMenuLink "
+                  <a *ngIf="authService.deslogado()" class="btn btn-secondary dropdown-toggle" href="# " role="button " id="dropdownMenuLink "
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">Usuário</a>
+                    <a *ngIf="authService.logado()" class="btn btn-secondary dropdown-toggle" href="# " role="button " id="dropdownMenuLink "
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">Olá, {{usuario.nome}}</a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item " routerLink='/login'>Logar</a>
+                        <a *ngIf="authService.deslogado()" class="dropdown-item " routerLink='/login'>Logar</a>
 
-                        <a class="dropdown-item" routerLink="/cadastro-produto" >cadastrar produto</a>
+                        <a *ngIf="authService.admin()" class="dropdown-item" routerLink="/cadastro-produto" >Cadastrar produto</a>
 
-                        <a class="dropdown-item" routerLink='/meus-produtos'>Meus produtos</a>
+                        <a *ngIf="authService.admin()" class="dropdown-item" routerLink='/meus-produtos'>Meus produtos</a>
+
+                        <a *ngIf="authService.logado()" class="dropdown-item " routerLink='/'>Sair</a>
 
 
                         <!-- <a class="dropdown-item " [routerLink]="[ '/produto-edit/id'] " ref="# ">atualizar produto</a>
