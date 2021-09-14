@@ -35,8 +35,14 @@ export class MenuComponent implements OnInit {
     private produtoService: ProdutoService
   ) { }
 
-  ngOnInit(): void {
-  }
-  }
+  ngOnInit(){ }
 
+    sair () {
+      this.router.navigate(['/login'])
+      environment.token = ""
+      environment.nome = ""
+      environment.id = 0
+    }
+
+  }
 
