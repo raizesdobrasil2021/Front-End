@@ -1,10 +1,9 @@
 import { RouterModule, } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http'
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
@@ -18,6 +17,10 @@ import { TodosProdutosComponent } from './todos-produtos/todos-produtos.componen
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { MeusProdutosComponent } from './meus-produtos/meus-produtos.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+/*Material pasta separada */
+import { MaterialModule } from './material/material.module';
 
 
 @NgModule({
@@ -41,7 +44,9 @@ import { MeusProdutosComponent } from './meus-produtos/meus-produtos.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
