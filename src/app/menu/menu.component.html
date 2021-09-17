@@ -1,61 +1,60 @@
-<div class="container-fluid">
-  <nav class="navbar-fluid navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid backgroud-menu">
+    <nav class="navbar-fluid navbar-expand-lg navbar-light">
 
-      <div class="row d-flex justify-content-between">
-          <div class="col-md-3 ml-5">
-              <div class="my-5">
-                  <a class=" " routerLink='/inicio'><img src="https://i.imgur.com/TZv98uW.png" width="100"></a>
-              </div>
-          </div>
-
-
-          <div class="col-md-6 align-items-center d-flex justify-content-center ml-5">
-              <a class="navbar-toggler" type="button "data-toggle="collapse"
-                  data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
-                  aria-expanded="false" aria-label="Alterna navegação">
-                  <span class="navbar-toggler-icon"></span>
-              </a>
-
-              <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-
-                  <form class="form-inline my-lg-2 mr-4">
-                      <input class="form-control mr-sm-5 my-5" type="search" placeholder="Pesquisar"
-                          aria-label="Pesquisar">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-                  </form>
-              </div>
-
-          </div>
-
-          <div class="col-md-2 navbar-nav align-items-center d-flex justify-content-center">
-
-              <div class="dropdown ml-4">
-                <a *ngIf="authService.deslogado()" class="btn btn-secondary dropdown-toggle" href="# " role="button " id="dropdownMenuLink "
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">Usuário</a>
-                  <a *ngIf="authService.logado()" class="btn btn-secondary dropdown-toggle" href="# " role="button " id="dropdownMenuLink "
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">Olá, {{usuario.nome}}</a>
-
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a *ngIf="authService.deslogado()" class="dropdown-item " routerLink='/login'>Logar</a>
-
-                      <a *ngIf="authService.admin()" class="dropdown-item" routerLink="/cadastro-produto" >Cadastrar produto</a>
-
-                      <a *ngIf="authService.admin()" class="dropdown-item" routerLink='/meus-produtos'>Meus produtos</a>
-
-                      <a *ngIf="authService.logado()" class="dropdown-item " routerLink='/login' (click)="sair()">Sair</a>
+        <div class="row d-flex justify-content-between">
+            <div class="col-md-3 ml-5">
+                <a class=" " routerLink='/inicio'><img src="https://i.imgur.com/g2FGUd1.png" width="140px"
+                        height="55px"></a>
+            </div>
 
 
-                      <!-- <a class="dropdown-item " [routerLink]="[ '/produto-edit/id'] " ref="# ">atualizar produto</a>
-                <a class="dropdown-item " [routerLink]="[ '/produto-delete/id'] " ref="# ">apagar produto</a> -->
-                  </div>
+            <div class="col-md-6 ml-5">
+                <a class="navbar-toggler" type="button " data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                    aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
 
-              </div>
-              <li class="nav-item active ml-3">
-                  <a class="nav-link" href="#">Carrinho<span class="sr-only">(página atual)</span></a>
-              </li>
+                <div class="collapse navbar-collapse col-md-12" id="conteudoNavbarSuportado">
+
+                    <form class="form-inline md-6 lg-2">
+                        <input class="form-control sm-5 " type="search" placeholder="Pesquisar"
+                            aria-label="Nome do produto">
+                        <button class="btn btn-outline-success my-2 " type="submit">Pesquisar</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col-md-2 navbar-nav mt-1">
+                <div class="dropdown">
+                    <a *ngIf="authService.deslogado()" class="btn btn-secondary dropdown-toggle" href="# " role="button"
+                        id="dropdownMenuLink " data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Usuário</a>
+                    <a *ngIf="authService.logado()" class="btn btn-secondary dropdown-toggle" href="# " role="button "
+                        id="dropdownMenuLink " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">Olá,
+                        {{usuario.nome}}</a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a *ngIf="authService.deslogado()" class="dropdown-item " routerLink='/login'>Logar</a>
+
+                        <a *ngIf="authService.admin()" class="dropdown-item" routerLink="/cadastro-produto">Cadastrar
+                            produto</a>
+
+                        <a *ngIf="authService.admin()" class="dropdown-item" routerLink='/meus-produtos'>Meus
+                            produtos</a>
+
+                        <a *ngIf="authService.logado()" class="dropdown-item " routerLink='/'>Sair</a>
 
 
-          </div>
-      </div>
-  </nav>
+                        <!-- <a class="dropdown-item " [routerLink]="[ '/produto-edit/id'] " ref="# ">atualizar produto</a>
+
+                  <a class="dropdown-item " [routerLink]="[ '/produto-delete/id'] " ref="# ">apagar produto</a> -->
+                    </div>
+                </div>
+                <li class="nav-item active ml-3">
+                    <a class="nav-link" href="#">Carrinho<span class="sr-only">(página atual)</span></a>
+                </li>
+            </div>
+        </div>
+    </nav>
 </div>

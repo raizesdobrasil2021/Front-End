@@ -1,8 +1,9 @@
 .background-rodape {
-    background-color: #C0E9D8;
-    color: green;
+    background-color:#642B18;
 }
-
+.h2{
+    font-size:18
+}
 .fs-16 {
     font-size: 16;
 }
