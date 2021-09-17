@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /*Material pasta separada */
 import { MaterialModule } from './material/material.module';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { MaterialModule } from './material/material.module';
     ProdutoEditComponent,
     ProdutoDeleteComponent,
     MeusProdutosComponent,
+    SobreNosComponent,
   ],
   imports: [
     BrowserModule,
