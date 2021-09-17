@@ -25,7 +25,7 @@ const routes: Routes = [
   {path:  'meus-produtos',component:MeusProdutosComponent},
   {path: 'produto-edit/:id',component: ProdutoEditComponent},
   {path: 'produto-delete/:id',component: ProdutoDeleteComponent},
-  {path: 'sobre-nos',component: SobreNosComponent}
+  {path: 'sobre-nos',component: SobreNosComponent},
 
 ];
 
