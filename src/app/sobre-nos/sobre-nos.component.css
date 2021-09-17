@@ -1,0 +1,9 @@
+.pointer {
+  cursor: pointer;
+}
+
+span {
+  text-align: center;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
