@@ -60,7 +60,13 @@ export class AuthService {
     }
     return ok;
   }
-
+  dadosUsuario(){
+    let usuario = {
+      nome: environment.nome,
+      id: environment.id,
+    }
+    return usuario
+  }
   deslogado() {
     let ok: boolean = true;
 
