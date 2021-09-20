@@ -1,7 +1,9 @@
+import { CoreEnvironment } from '@angular/compiler/src/compiler_facade_interface';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CategoriaReq } from 'src/app/model/CategoriaReq';
 import { ProdutoReq } from 'src/app/model/ProdutoReq';
+import { UsuarioReq } from 'src/app/model/UsuarioReq';
 
 import { AuthService } from 'src/app/service/auth.service';
 import { CategoriaService } from 'src/app/service/categoria.service';
@@ -20,7 +22,8 @@ export class ProdutoEditComponent implements OnInit {
   listaCategoria: CategoriaReq[]
   listaProdutos: ProdutoReq[]
   idCategoria : number
-
+  idUsuario = environment.id
+  usuario :  UsuarioReq = new UsuarioReq
   constructor(
     private router: Router,
     private produtoService: ProdutoService,
@@ -79,6 +82,9 @@ export class ProdutoEditComponent implements OnInit {
   atualizarProduto(){
     this.categoria.id = this.idCategoria
     this.produto.categoria = this.categoria
+
+    this.usuario.id = this.idUsuario
+    this.produto.usuario = this.usuario
 
     this.produtoService.putProdutos(this.produto).subscribe((resp: ProdutoReq)=>{
       this.produto = resp

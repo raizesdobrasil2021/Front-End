@@ -1,38 +1,41 @@
-<div class="container fluid">
+<div class="container mt-5 mb-5">
 
-    <div class="div">
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h1>Meus produtos</h1>
-            </div>
+    <div class="row mb-5">
+        <div class="col-md-12">
+            <h1 class="text-center">Meus produtos</h1>
         </div>
     </div>
 
 
-    <!-- começo todos os produtos -->
+    <!-- começo meus os produtos -->
 
 
-    <div class="card-columns">
-        <div class="card text-center" *ngFor="let item of usuario.produto">
-            <div class="card-body">
-                <img src="{{item.imagem}}" class="card-title m-0" width="250px" height="150px">
-                <div>
-                    <small class="text-muted"> Categoria: {{item.categoria.descricao}}</small>
-                </div>
-                <p class="card-text mt-3">{{item.nome}}</p>
-                <p class="card-text">
-                    <small class="text-muted">
-                        Data de validade do produto{{item.dtValidade | date: "dd/MM/yyyy"}}
+    <div class="row">
+        <!--div envolvendo todos os cards-->
+        <div class="col-sm-4 mb-3" *ngFor='let produto of usuario.produto'>
+
+            <!--cada card com o produto-->
+            <div class="card">
+                <img class="img-fluid" alt="Imagem do produto" src="{{produto.imagem}}">
+                <div class="card-body">
+
+                    <div>
+                        <small class="text-muted"> Categoria: {{produto.categoria.descricao}}</small>
+                    </div>
+                    <p class="card-text mt-3">{{produto.nome}}</p>
+                    <p>R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                        Data de validade do produto :{{produto.dtValidade | date: "dd/MM/yyyy"}}
                     </small>
-                </p>
-                <button class="btn btn-info mr-2" [routerLink]="['/produto-edit', item.id]">
+                    </p>
+                    <button class="btn mr-4" [routerLink]="['/produto-edit',produto.id]" id="btn-1">
                     Editar
                 </button>
-                <button class="btn btn-danger"[routerLink]="['/produto-delete',item.id]">
+                    <button class="btn" [routerLink]="['/produto-delete',produto.id]" id="btn-2">
                     Apagar
                 </button>
+                </div>
             </div>
         </div>
     </div>
-</div>

@@ -18,7 +18,7 @@ import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { MeusProdutosComponent } from './meus-produtos/meus-produtos.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { CurrencyMaskModule } from 'ng2-currency-mask';
 /*Material pasta separada */
 import { MaterialModule } from './material/material.module';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
@@ -49,6 +49,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
     RouterModule,
     BrowserAnimationsModule,
     MaterialModule,
+    CurrencyMaskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

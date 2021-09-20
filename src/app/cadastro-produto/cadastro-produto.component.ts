@@ -60,7 +60,8 @@ export class CadastroProdutoComponent implements OnInit {
     this.usuario.id = this.idUsuario
     this.produto.categoria = this.categoria
     this.produto.usuario = this.usuario
-    
+   
+   
 console.log(this.produto)
 
     this.produtoService.postProdutos(this.produto).subscribe((resp: ProdutoReq) => {
