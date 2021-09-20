@@ -38,10 +38,12 @@ export class MenuComponent implements OnInit {
   ngOnInit(){ }
 
     sair () {
-      this.router.navigate(['/login'])
       environment.token = ""
       environment.nome = ""
       environment.id = 0
+      environment.tipo = ""
+      this.router.navigate(["/home"])
+      alert("Sessão finalizada")
     }
 
   }

@@ -42,7 +42,7 @@
                         <a *ngIf="authService.admin()" class="dropdown-item" routerLink='/meus-produtos'>Meus
                             produtos</a>
 
-                        <a *ngIf="authService.logado()" class="dropdown-item " routerLink='/'>Sair</a>
+                        <a *ngIf="authService.logado()" class="dropdown-item " (click)="sair()">Sair</a>
 
 
                         <!-- <a class="dropdown-item " [routerLink]="[ '/produto-edit/id'] " ref="# ">atualizar produto</a>
