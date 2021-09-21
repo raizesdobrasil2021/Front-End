@@ -56,6 +56,4 @@ export class InicioComponent implements OnInit {
       this.usuario = resp
     })
   }
-
-
 }
