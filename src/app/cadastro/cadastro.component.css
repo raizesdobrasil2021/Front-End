@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
-.container-fluid {
-    background-color: rgba(255, 255, 255);
-    background-image: url("https://i.imgur.com/1UBdJXh.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: right;
-    height: 110ch;
-}
-
 .form-group {
     margin-top: -2%;
     width: 100%;
     text-align: center!important;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
@@ -39,15 +34,11 @@ input {
     display: inline-block;
 }
 
-
-/* Estilo para retirar o sublinhado do input Material Angular */
-
 ::ng-deep .mat-form-field-underline {
     display: none;
 }
 
 .btn {
-    background-color: rgba(37, 47, 21, 0.8) !important;
     padding: 1%;
     color: #F8ECEC;
     width: 20%;

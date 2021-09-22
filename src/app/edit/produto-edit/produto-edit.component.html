@@ -1,8 +1,8 @@
-<div class="container-fluid d-flex justify-content-center">
+<div class="container d-flex justify-content-center">
     <div class="row alinhamento">
         <div class="row d-flex">
             <div class="col-md-10">
-                <h1 class="text-center">Atualizar produto</h1>
+                <h1 class="text-center">ATUALIZAR PRODUTO</h1>
 
                 <div class="form-group">
                     <label for="nome">Nome do produto</label>
@@ -17,12 +17,13 @@
                 <div class="form-group">
                     <label for="categoria">Selecione a categoria do produto</label>
                     <select name="categoria" id="categoria" class="form-control" type="number" (change)="produtoCategoria($event)">
-            <option>Escolha um tipo de categoria</option>
-            <option value="1">Frutas</option>
-            <option value="2">Verduras</option>
-            <option value="3">Legumes</option>
-            <option value="4">Mercearia</option>
-            <option value="5">Bebidas e laticínios</option>
+                        <option>Escolha um tipo de categoria</option>
+                        <option value="1">Frutas</option>
+                        <option value="2">Verduras</option>
+                        <option value="3">Legumes</option>
+                        <option value="4">Mercearia</option>
+                        <option value="5">Bebidas</option>
+                        <option value="6">Laticínios</option>
           </select>
 
                     <div class="form-group">
@@ -33,7 +34,7 @@
                     <div class="form-group">
                         <label for="valor">Preço</label>
                         <div class="d-flex align-items-center">
-                            <input currencyMask [(ngModel)]='produto.preco' class="form-control" id="valor" placeholder="Ex.: 2,25">
+                            <input currencyMask [(ngModel)]='produto.preco' [options]="{prefix: 'R$', thousands: '.', decimal: ',', align: 'left'}" class="form-control" id="preco" placeholder="Ex.: 4,50">
                         </div>
                     </div>
 

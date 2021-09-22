@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #642B18;
+    font-size: 1.5rem;
+}
+
 #btn-1 {
     color: white;
     background-color: #642B18;
@@ -6,4 +17,8 @@
 #btn-2 {
     color: white;
     background-color: #078C03;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
 }
