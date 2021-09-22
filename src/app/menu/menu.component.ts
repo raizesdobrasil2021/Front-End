@@ -24,7 +24,7 @@ export class MenuComponent implements OnInit {
   tipo = environment.tipo
   //tipoUsuario = this.usuario.tipo.
   //tipoAdministrador = environment.tipoAdministrador
-
+  busca: string
 
 
   constructor(
@@ -37,6 +37,17 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(){ }
 
+  refresh2(idCat: number){
+    this.router.navigateByUrl('/home', { skipLocationChange: true }).then(() =>{
+         this.router.navigate(['/categoria',idCat])
+    })
+  }
+
+  refresh(){
+      this.router.navigateByUrl('/home', { skipLocationChange: true }).then(() =>{
+           this.router.navigate(["/pesquisa",this.busca])
+      })
+  }
     sair () {
       environment.token = ""
       environment.nome = ""

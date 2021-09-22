@@ -24,3 +24,38 @@
   font-size:15pt;;
 
 }
+fa-search{
+  font-size: 20px;
+  color: white;
+}
+.fa-search:hover{
+  color: #078c03;
+}
+#divBusca{
+  background-color: white;
+  border-radius:15px;
+  width: 500px;
+  display: flex;
+  position: relative;
+  }
+  #txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left: 20px;
+  font-style:italic;
+  font-size:15px;
+  border:none;
+  margin:auto;
+  }
+.dropdown-menu {
+  background-color: #078c03;
+}
+.btn-1 {
+  align-items:end;
+  justify-content:end;
+  display:flex;
+  margin: auto;
+}
+.barra-pesquisa {
+  background-color: #a6631c75;
+}
