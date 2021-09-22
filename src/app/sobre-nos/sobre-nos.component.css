@@ -6,8 +6,9 @@
 }
 
 span {
-  text-align: center;
-  font-size: 1em;
+  color:#642B18;
+  text-align:center;
+  font-size:15pt;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
 } 
@@ -20,4 +21,7 @@ h1 {
 }
 span,p{
   font-family: 'Open Sans', sans-serif;
+}
+.background-cores{
+  background-color:rgba(86,178,128,0.08);
 }
