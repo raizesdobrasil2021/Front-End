@@ -10,6 +10,41 @@
 
 .background-rodape-final {
     background-color: green;
-}    
+}
 
+.btn-social {
+  padding: 10px;
+}
 
+.btn-social:hover {
+  background-color: #a6631c75;
+
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+.sec-footer-bg {
+  background-color: #49b578;
+}
+
+.footer-links {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .centerFooterOnSmallDevices {
+      display: flex!important;
+      justify-content: center!important;
+      align-items: center!important;
+      text-align: center!important;
+  }
+}
+.background-footer {
+  background-color: #252f15;
+}

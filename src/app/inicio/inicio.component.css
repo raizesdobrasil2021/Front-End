@@ -211,3 +211,6 @@ i .carousel-button {
   font-size: 2em;
   color: #a6641c
 }
+.border  {
+  cursor: pointer;
+}
