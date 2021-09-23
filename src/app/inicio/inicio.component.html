@@ -113,42 +113,42 @@
 
 
     <div class="col-md-2 d-flex flex-column align-items-center my-2">
-      <div class="border text-center ">
+      <div class="text-center ">
         <a class="categorias" routerLink="/categoria/1" href="">Frutas</a>
         <i class='fas fa-apple-alt  tamIconsCat mr-1 pointer' routerLink='/categoria/1'></i>
       </div>
     </div>
     <div class="col-md-2 d-flex flex-column align-items-center my-2">
-      <div class="border text-center ">
+      <div class="text-center ">
         <a class="categorias" routerLink='/categoria/2' href="">Verduras</a>
         <i class='fas fa-leaf text-center tamIconsCat pointer' routerLink='/categoria/2'></i>
       </div>
     </div>
     <div class="col-md-2 d-flex flex-column align-items-center my-2">
-      <div class="border text-center ">
+      <div class="text-center ">
         <a class="categorias" routerLink='/categoria/3' href="">Legumes</a>
         <i class='fas fa-carrot tamIconsCat pointer' routerLink='/categoria/3'></i>
       </div>
     </div>
 
     <div class="col-md-2 d-flex flex-column align-items-center my-2">
-      <div class="border text-center">
+      <div class="text-center">
         <a class="categorias" routerLink='/categoria/4' href="">Merceária</a>
         <i class="fas fa-store-alt tamIconsCat  pointer" routerLink='/categoria/4'></i>
       </div>
     </div>
 
     <div class="col-md-2 d-flex flex-column align-items-center my-2">
-      <div class="border text-center ">
+      <div class="text-center ">
         <a class="categorias" routerLink='/categoria/5' href="">Bebidas</a>
         <i class="fas fa-wine-bottle tamIconsCat pointer" routerLink='/categoria/5'></i>
       </div>
     </div>
 
     <div class="col-md-2 d-flex flex-column align-items-center my-2">
-      <div class="border text-center">
-        <a class="categorias" routerLink='/categoria/5' href="">Laticínios</a>
-        <i class="fas fa-wine-bottle tamIconsCat pointer" routerLink='/categoria/5'></i>
+      <div class="text-center">
+        <a class="categorias" routerLink='/categoria/6' href="">Laticínios</a>
+        <i class="fas fa-cheese tamIconsCat "routerLink='/categoria/6'></i>
       </div>
     </div>
   </div>
@@ -156,108 +156,167 @@
 
 
 <div class="container">
-  <div class="">
-    <div class="my-4">
-      <h3 class="conheca" routerLink="/todos-produtos" ref="#">Produtos</h3>
+  <div class="row d-flex">
+    <div class="col-md-12 text-center mt-5 mb-5">
+      <a class="conheca" routerLink='["/todos-produtos"]'ref="#"id="produtos-link">Produtos</a>
     </div>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-md-4 mb-3">
-        <div class="card cursor-pointer" routerLink="/produto/4">
-          <img class="img-fluid" alt="Imagem do produto" src="https://i.imgur.com/6lG2qiz.jpg" height="250px"
-            width="375px">
-          <div class="card-body">
-            <h4 class="card-title">Banana</h4>
-            <p class="card-text">Banana prata orgânica sem agrotóxicos.<br>R$ 6,90</p>
-            <a class="btn btn-verde w-100" routerLink="/produto/103">Ver produto</a>
+        <div class="card cursor-pointer" routerLink="/produto/31">
+          <img class="img-fluid" alt="Abacaxi" src="https://i.imgur.com/0NQy2Ij.png">
+          <div class="card-body cardcor  text-center justify-content-center">
+            <p><small id="categoria">categoria: Fruta</small></p>
+            <h2 class="card-title">Abacaxi</h2>
+            <div class="row">
+              <div class="col-md-6 mt-2">
+                <p class="preco">R$ 3,20</p> 
+              </div>
+              <div class="col-md-6">
+                <a class="btn"id="btn-2" routerLink="/produto/31">Ver produto</a>
+              </div> 
+            </div>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-3">
-        <div class="card cursor-pointer" routerLink="/produto/4">
-          <img class="img-fluid" alt="Imagem do produto" src="https://i.imgur.com/doQsf3S.jpg" width="250px"
-            height="150px">
-          <div class="card-body">
-            <h4 class="card-title">Mandioquinha</h4>
-            <p class="card-text">È uma raiz subterrâneo comestível muito usado na culinária brasileira..<br>R$ 5.55
-            </p>
-            <a class="btn btn-verde w-100" routerLink="/produto/103">Ver produto</a>
+        <div class="card cursor-pointer" routerLink="/produto/38">
+          <img class="img-fluid cursor-pointer" alt="Mel" src="https://i.imgur.com/rdR3tnL.png">
+          <div class="card-body cardcor  text-center justify-content-center">
+            <p><small id="categoria">categoria: Mercearia</small></p>
+            <h2 class="card-title">Mel</h2>
+            <div class="row">
+              <div class="col-md-6 mt-2">
+                <p class="preco">R$ 25,00</p> 
+              </div> 
+              <div class="col-md-6">
+                <a class="btn"id="btn-2" routerLink="/produto/38">Ver produto</a>
+              </div> 
+            </div>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-3">
-        <div class="card cursor-pointer" routerLink="/produto/4">
-          <img class="img-fluid" alt="Imagem do produto" src="https://i.imgur.com/6lG2qiz.jpg" width="250px"
-            height="150px">
-          <div class="card-body">
-            <h4 class="card-title">Banana</h4>
-            <p class="card-text">Banana prata orgânica sem agrotóxicos.<br>R$ 6,90</p>
-            <a class="btn btn-verde w-100" routerLink="/produto/103">Ver produto</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="card cursor-pointer" routerLink="/produto/4">
-          <img class="img-fluid" alt="Imagem do produto" src="https://i.imgur.com/6lG2qiz.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Banana</h4>
-            <p class="card-text">Banana prata orgânica sem agrotóxicos.<br>R$ 6,90</p>
-            <a class="btn btn-verde w-100" routerLink="/produto/103">Ver produto</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="card cursor-pointer" routerLink="/produto/4">
-          <img class="img-fluid" alt="Imagem do produto" src="https://i.imgur.com/6lG2qiz.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Banana</h4>
-            <p class="card-text">Banana prata orgânica sem agrotóxicos.<br>R$ 6,90</p>
-            <a class="btn btn-verde w-100" routerLink="/produto/103">Ver produto</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="card cursor-pointer" routerLink="/produto/4">
-          <img class="img-fluid" alt="Imagem do produto" src="https://i.imgur.com/6lG2qiz.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Banana</h4>
-            <p class="card-text">Banana prata orgânica sem agrotóxicos.<br>R$ 6,90</p>
-            <a class="btn btn-verde w-100" routerLink="/produto/103">Ver produto</a>
+        <div class="card cursor-pointer" routerLink="/produto/34">
+          <img class="img-fluid" alt="Pimenta" src="https://i.imgur.com/mQrRfaX.png">
+          <div class="card-body cardcor  text-center justify-content-center">
+            <p><small id="categoria">categoria: Mercearia</small></p>
+            <h2 class="card-title">Pimenta</h2>
+            <div class="row">
+              <div class="col-md-6 mt-2">
+                <p class="preco">R$ 8,90</p> 
+              </div>
+              <div class="col-md-6">
+                <a class="btn"id="btn-2" routerLink="/produto/34">Ver produto</a>
+              </div> 
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4 mb-3">
-        <div class="card cursor-pointer" routerLink="/produto/4">
-          <img class="img-fluid" alt="Imagem do produto" src="https://i.imgur.com/6lG2qiz.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Banana</h4>
-            <p class="card-text">Banana prata orgânica sem agrotóxicos.<br>R$ 6,90</p>
-            <a class="btn btn-verde w-100" routerLink="/produto/103">Ver produto</a>
+        <div class="card cursor-pointer" routerLink="/produto/24">
+          <img class="img-fluid" alt="Pão" src="https://i.imgur.com/Z1p9utl.png">
+          <div class="card-body cardcor  text-center justify-content-center">
+            <p><small id="categoria">categoria: Mercearia</small></p>
+            <h2 class="card-title">Pão</h2>
+            <div class="row">
+              <div class="col-md-6 mt-2">
+                <p class="preco">R$ 8,90</p> 
+              </div>
+              <div class="col-md-6">
+                <a class="btn"id="btn-2" routerLink="/produto/24">Ver produto</a>
+              </div> 
+            </div>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-3">
-        <div class="card cursor-pointer" routerLink="/produto/4">
-          <img class="img-fluid" alt="Imagem do produto" src="https://i.imgur.com/6lG2qiz.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Banana</h4>
-            <p class="card-text">Banana prata orgânica sem agrotóxicos.<br>R$ 6,90</p>
-            <a class="btn btn-verde w-100" routerLink="/produto/103">Ver produto</a>
+        <div class="card cursor-pointer" routerLink="/produto/54">
+          <img class="img-fluid" alt="Couve" src="https://feirinha.vercel.app/_next/image?url=https%3A%2F%2Fraizs.vteximg.com.br%2Farquivos%2Fids%2F162024%2FCouve-Roxa.jpg%3Fv%3D637292597885300000&w=640&q=75">
+          <div class="card-body cardcor  text-center justify-content-center">
+            <p><small id="categoria">categoria: Verdura</small></p>
+            <h2 class="card-title">Couve</h2>
+            <div class="row">
+              <div class="col-md-6 mt-2">
+                <p class="preco">R$ 5,60</p> 
+              </div>
+              <div class="col-md-6">
+                <a class="btn"id="btn-2" routerLink="/produto/54">Ver produto</a>
+              </div> 
+            </div>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-3">
-        <div class="card cursor-pointer" routerLink="/produto/4">
-          <img class="img-fluid" alt="Imagem do produto" src="https://i.imgur.com/6lG2qiz.jpg">
-          <div class="card-body">
-            <h4 class="card-title">Banana</h4>
-            <p class="card-text">Banana prata orgânica sem agrotóxicos.<br>R$ 6,90</p>
-            <a class="btn btn-verde w-100" routerLink="/produto/103">Ver produto</a>
+        <div class="card cursor-pointer" routerLink="/produto/43">
+          <img class="img-fluid" alt="Café" src="https://i.imgur.com/ZPsAgSb.png">
+          <div class="card-body cardcor  text-center justify-content-center">
+            <p><small id="categoria">categoria: Merceria</small></p>
+            <h2 class="card-title">Cafe</h2>
+            <div class="row">
+              <div class="col-md-6 mt-2">
+                <p class="preco">R$ 3,90</p> 
+              </div>
+              <div class="col-md-6">
+                <a class="btn"id="btn-2" routerLink="/produto/43">Ver produto</a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card cursor-pointer" routerLink="/produto/11">
+          <img class="img-fluid" alt="Melancia" src="https://i.imgur.com/ryKK28p.png">
+          <div class="card-body cardcor  text-center justify-content-center">
+            <p><small id="categoria">categoria: Fruta</small></p>
+            <h2 class="card-title">Melancia</h2>
+            <div class="row">
+              <div class="col-md-6 mt-2">
+                <p class="preco">R$ 22,55</p> 
+              </div>
+              <div class="col-md-6">
+                <a class="btn"id="btn-2" routerLink="/produto/11">Ver produto</a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card cursor-pointer" routerLink="/produto/31">
+          <img class="img-fluid" alt="Farofa" src="https://i.imgur.com/U7ySIjC.png">
+          <div class="card-body cardcor  text-center justify-content-center">
+            <p><small id="categoria">categoria: Mercearia</small></p>
+            <h2 class="card-title">Farofa</h2>
+            <div class="row">
+              <div class="col-md-6 mt-2">
+                <p class="preco">R$ 3,20</p> 
+              </div>
+              <div class="col-md-6">
+                <a class="btn"id="btn-2" routerLink="/produto/103">Ver produto</a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card cursor-pointer" routerLink="/produto/13">
+          <img class="img-fluid" alt="Queijo" src="https://i.imgur.com/xE41beZ.png">
+          <div class="card-body cardcor  text-center justify-content-center">
+            <p><small id="categoria">categoria: Laticínios</small></p>
+            <h2 class="card-title">Queijo</h2>
+            <div class="row">
+              <div class="col-md-6 mt-2">
+                <p class="preco">R$ 6,40</p> 
+              </div>
+              <div class="col-md-6">
+                <a class="btn"id="btn-2" routerLink="/produto/13">Ver produto</a>
+              </div> 
+            </div>
           </div>
         </div>
       </div>
