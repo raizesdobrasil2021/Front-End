@@ -1,50 +1,53 @@
-<div class="container-fluid backgroud-menu">
+
+  <div class="container-fluid backgroud-menu">
     <nav class="navbar-fluid navbar-expand-lg navbar-light">
 
-        <div class="row d-flex justify-content-between align-items-center">
-            <div class="col-md-6 d-flex justify-content-start align-items-center ">
-                <a class="" routerLink='/inicio'><img src="https://i.imgur.com/g2FGUd1.png" width="140px" height="55px"></a>
+      <div class="row d-inline-flex justify-content-between align-items-center w-100">
+        <div class="col-md-3 d-flex justify-content-start align-items-center ">
+          <a class="" routerLink='/inicio'><img src="https://i.imgur.com/g2FGUd1.png" width="140px" height="55px"></a>
+        </div>
 
-                <a class="navbar-toggler" type="button " data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </a>
+        <div class="row d-flex justify-content-center align-items-center">
+          <form class="col-md-12 d-flex  justify-content-center align-items-center">
+            <div id="divBusca">
+              <input [(ngModel)]="busca" name="busca" type="search" id="txtBusca" placeholder="O que você procura?" />
+              <button class="btn btn-1" type="submit" id="cor" (click)="refresh()"><i id="cor" class="fa fa-search"
+                  aria-hidden="true"></i></button>
             </div>
+          </form>
+        </div>
 
-            <div class="collapse navbar-collapse d-flex col-md-6 justify-content-end align-items-center" id="conteudoNavbarSuportado">
-                <div class="dropdown ">
-                    <a class="text-white fs-15" *ngIf="authService.deslogado()" id="login" routerLink='/login'><i
-              class="fs-15 text-white fa fa-user-circle" aria-hidden="true"></i> Login</a>
+        <div class="collapse navbar-collapse d-flex col-md-3 justify-content-end align-items-center"
+          id="conteudoNavbarSuportado">
+          <div class="dropdown">
+            <a class="text-white fs-15" *ngIf="authService.deslogado()" id="login" routerLink='/login'><i
+                class="fs-15 text-white fa fa-user-circle" aria-hidden="true"></i> Login</a>
 
-                    <a *ngIf="authService.logado()" class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Olá,
-            {{authService.dadosUsuario().nome}}</a>
+            <a *ngIf="authService.logado()" class="btn dropdown-toggle" href="# " role="button " id="dropdownMenuLink "
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false ">Olá,
+              {{authService.dadosUsuario().nome}}</a>
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
-                        <a *ngIf="authService.admin()" class="dropdown-item" routerLink="/cadastro-produto">Cadastrar
-              produto</a>
+              <a *ngIf="authService.admin()" class="dropdown-item" routerLink="/cadastro-produto">Cadastrar
+                produto</a>
 
-                        <a *ngIf="authService.admin()" class="dropdown-item" routerLink='/meus-produtos'>Meus
-              produtos</a>
+              <a *ngIf="authService.admin()" class="dropdown-item" routerLink='/meus-produtos'>Meus
+                produtos</a>
 
-                        <a *ngIf="authService.logado()" class="dropdown-item" (click)="sair()">Sair</a>
+              <a *ngIf="authService.logado()" class="dropdown-item " (click)="sair()">Sair</a>
 
 
-                        <!-- <a class="dropdown-item " [routerLink]="[ '/produto-edit/id'] " ref="# ">atualizar produto</a>
+              <!-- <a class="dropdown-item " [routerLink]="[ '/produto-edit/id'] " ref="# ">atualizar produto</a>
 
                   <a class="dropdown-item " [routerLink]="[ '/produto-delete/id'] " ref="# ">apagar produto</a> -->
-                    </div>
-                </div>
-                <a *ngIf="authService.logado()" class="btn ml-1"><i class="fas fa-shopping-cart"></i></a>
             </div>
+          </div>
+          <a *ngIf="authService.logado()" class="btn ml-1"><i class="fas fa-shopping-cart"></i></a>
         </div>
-        <div class="row">
-            <form class="col d-flex flex-column justify-content-center align-items-center p-1 barra-pesquisa">
-                <div id="divBusca">
-                    <input [(ngModel)]="busca" name="busca" type="search" id="txtBusca" placeholder="O que você procura?" />
-                    <button class="btn btn-1" type="submit" id="cor" (click)="refresh()"><i id="cor" class="fa fa-search"
-              aria-hidden="true"></i></button>
-                </div>
-            </form>
-        </div>
+
+
+      </div>
     </nav>
-</div>
+  </div>
+>>>>>>> Stashed changes

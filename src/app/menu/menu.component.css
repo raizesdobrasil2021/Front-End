@@ -34,7 +34,7 @@ fa-search{
 #divBusca{
   background-color: white;
   border-radius:15px;
-  width: 500px;
+  width: 100%;
   display: flex;
   position: relative;
   }
@@ -47,15 +47,10 @@ fa-search{
   border:none;
   margin:auto;
   }
-.dropdown-menu {
-  background-color: #078c03;
-}
 .btn-1 {
   align-items:end;
   justify-content:end;
   display:flex;
-  margin: auto;
+
 }
-.barra-pesquisa {
-  background-color: #a6631c75;
-}
+
