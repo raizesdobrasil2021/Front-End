@@ -14,31 +14,26 @@
 
     <div class="row d-flex justify-content-center mt-4">
         <div class="col-md-4">
-
-            <div class="card">
-                <img class="img-fluid" alt="Imagem do produto" src="{{produto.imagem}}">
-                <div class="card-body  cardcor">
-                    <div>
-                        <small class="text-muted"> Categoria: {{produto.categoria.descricao}}</small>
-                    </div>
-                    <p class="card-text mt-3">{{produto.nome}}</p>
-                    <p>R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
-                    <p class="card-text">
-                        <small class="text-muted">
-                    Data de validade do produto: {{produto.dtValidade | date: "dd/MM/yyyy"}}
-                </small>
+            <div class="border card card-radius">
+                <img class="img-fluid img-radius" alt="Imagem do produto" src="{{produto.imagem}}">
+                <div class="card-body cardcor">
+                    <p class="card-text text-center">
+                        <small> Categoria: {{produto.categoria.descricao}}</small>
                     </p>
+
+                    <h2 class="card-text text-center mt-3">{{produto.nome}}</h2>
+                    <p class="text-center" id="preco">R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
+                    <p class="card-text text-center">
+                        <small class="text-center">
+                            Data de validade do produto: {{produto.dtValidade | date : "dd/MM/yyyy"}}
+                        </small>
+                    </p>
+                    <div class="row d-flex flex-nowrap justify-content-center">
+                        <button routerLink='/meus-produtos' type="submit" class="btn mr-4" id="btn-1">Cancelar</button>
+                        <button (click)='apagarProduto()' type="submit" class="btn" id="btn-2">Apagar</button>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
-
-    <div class="row mt-5">
-        <div class="col-md-12 d-flex justify-content-center">
-            <button routerLink='/meus-produtos' type="submit" class="btn mr-4" id="btn-1">Cancelar</button>
-            <button (click)='apagarProduto()' type="submit" class="btn" id="btn-2">Apagar</button>
-        </div>
-    </div>
-
 </div>

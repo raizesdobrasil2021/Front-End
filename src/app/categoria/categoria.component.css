@@ -8,59 +8,58 @@ h1 {
     color: #642B18;
     font-size: 1.5rem;
 }
-p{
-    font-size:1.4rem;
+
+p {
+    font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
     font-weight: semi-bold;
-    color:#066b01
-}
-h2{
-    font-size:1,7rem;
-    margin:5%;
-    font-family: 'Poppins', sans-serif;
-    color:#a30461
-}
-#btn-1 {
-    color: white;
-    background-color: #642B18;
+    color: #066b01
 }
 
-#btn-2 {
-    width:55%;
-    margin:20%;
-    color: white;
-    background-color: #078C03;
+h2 {
+    font-size: 1, 7rem;
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: #a30461
 }
 
 .cardcor {
     background-color: rgba(192, 233, 216, 100);
 }
-cards{
-    display:wrap;
-    padding:32px;
+
+cards {
+    display: wrap;
+    padding: 32px;
 }
-cards section.card img{
-    width:100%
+
+cards section.card img {
+    width: 100%
 }
-.img-radius{
+
+.img-radius {
     border-radius: 1.3em;
 }
-.card-radius{
+
+.card-radius {
     border-radius: 1.3em;
 }
+
 #btn-1 {
-    margin:auto;
+    margin: auto;
     color: white;
     background-color: #642B18;
 }
-#btn-1:hover{
-    background-color:#3a1509
+
+#btn-1:hover {
+    background-color: #3a1509
 }
+
 #btn-2 {
-    margin:auto;
+    margin: auto;
     color: white;
     background-color: #078C03;
 }
-#btn-2:hover{
-    background-color:#033101
+
+#btn-2:hover {
+    background-color: #033101
 }

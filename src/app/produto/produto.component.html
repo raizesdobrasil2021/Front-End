@@ -23,7 +23,7 @@
                     <p class="card-text mt-3">Quantidade disponível: {{produto.quantidade}}</p>
                 </div>
                 <div class="col-md-6">
-                    <button class="btn justify-content-center" id="btn-2"><i class="fas fa-cart-plus mr-2"> </i>
+                    <button class="btn justify-content-center" data-toggle="modal" data-target="#exampleModalCenter" id="btn-2"><i class="fas fa-cart-plus mr-2"> </i>
                          Adicionar ao carrinho
                     </button>
                 </div>
@@ -33,6 +33,31 @@
                     <p class="card-text dttexto"> Data de Validade : {{produto.dtValidade | date: "dd/MM/yyyy"}}
                     </p>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Raizes do Brasil</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body textoobg">
+                Obrigado, compra efetuada com sucesso!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-1">fechar</button>
+                <button type="button" class="btn" routerLink="/todos-produtos" data-dismiss="modal" id="btn-2">continuar comprando</button>
             </div>
         </div>
     </div>

@@ -39,8 +39,27 @@
     }
     
     #btn-2 {
+        margin: auto;
         color: white;
         background-color: #078C03;
+    }
+    
+    #btn-2:hover {
+        background-color: #033101
+    }
+    
+    #btn-modal {}
+    
+    #btn-modal2 {}
+    
+    #btn-1 {
+        margin: auto;
+        color: white;
+        background-color: #642B18;
+    }
+    
+    #btn-1:hover {
+        background-color: #3a1509
     }
     
     .dttexto {
@@ -51,4 +70,19 @@
     
     .imgradius {
         border-radius: 10px;
+    }
+    
+    h5 {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        text-align: center;
+        color: #098905;
+        font-weight: bold;
+        font-size: 1rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .textoobg {
+        font-family: 'Poppins', sans-serif;
+        color: #642B18;
     }
