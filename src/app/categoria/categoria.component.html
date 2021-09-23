@@ -10,17 +10,15 @@
 </div>
 
 
-<div class="container ">
+<div class="container">
     <div class="row">
-        <div class=" ml-3" *ngFor="let produto of categoria.produto">
-            <div class="card" [routerLink]="['/produto', produto.id]">
-                <div class="d-flex justify-content-center">
-                    <img class="img-fluid" alt="Imagem do produto" width="250px" height="150px" src="{{produto.imagem}}">
-                </div>
+        <div class="col-sm-4 mb-3" *ngFor="let produto of categoria.produto">
+            <div class="border card cardcor card-radius" [routerLink]="['/produto', produto.id]">
+                    <img class="img-fluid img-radius" alt="Imagem do produto"  src="{{produto.imagem}}">
                 <div class="card-body text-center">
-                    <h4 class="nome">{{produto.nome}}</h4>
+                    <h2 class="nome">{{produto.nome}}</h2>
                     <p id="preco">R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
-                    <a class="btn btn-verde w-100">Ver produto</a>
+                    <a class="btn"id="btn-2">Ver</a>
                 </div>
             </div>
 

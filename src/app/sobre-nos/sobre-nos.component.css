@@ -19,9 +19,21 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   margin:3%
 }
-span,p{
+p{
+  font-size:16pt;
+  color:#642B18;
   font-family: 'Open Sans', sans-serif;
+}
+span{
+  font-size:12pt;
 }
 .background-cores{
   background-color:rgba(86,178,128,0.08);
+}
+.card-radius{
+  border-color: black;
+  border-radius: 1.3em;
+}
+.img-radius{
+  border-radius: 1.3em;
 }
