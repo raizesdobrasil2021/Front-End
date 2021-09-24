@@ -128,8 +128,7 @@ span.carousel-control-next-icon {
     bottom: 40px;
     right: -40px;
 }
-<<<<<<< Updated upstream
-=======
+
 .conheca{
   margin: 5%;
   text-align: center;
@@ -137,17 +136,8 @@ span.carousel-control-next-icon {
   font-family: "Ubuntu", sans-serif;
   color: #642B18 ;
   font-weight: bold;
->>>>>>> Stashed changes
-
-.conheca {
-    margin: 5%;
-    text-align: center;
-    font-size: 2em;
-    font-family: "Open Sans", sans-serif;
-    color: #642B18;
-    text-transform: uppercase;
-    font-weight: bold;
 }
+
 
 .categorias {
     margin: 2%;

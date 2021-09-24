@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color:#fff;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+}
+
 .centralizar-links{
   margin: 0 auto;
 }
@@ -24,8 +36,8 @@
   font-size:15pt;;
 
 }
-fa-search{
-  font-size: 20px;
+.fa-search{
+  font-size: 15px;
   color: white;
 }
 .fa-search:hover{
@@ -34,12 +46,12 @@ fa-search{
 #divBusca{
   background-color: white;
   border-radius:15px;
-  width: 100%;
   display: flex;
   position: relative;
+  width: 80%;
   }
   #txtBusca{
-  float:left;
+  float:center;
   background-color:transparent;
   padding-left: 20px;
   font-style:italic;
@@ -53,4 +65,36 @@ fa-search{
   display:flex;
 
 }
+.corDrop {
+  color: #078c03 !important;
+}
+.fa-search {
+  color: #078c03;
+}
+.fa-search:hover {
+  opacity: 0.7;
+}
+.dropdown-item{
+  color: #078c03 !important;
 
+}
+.img-section {
+  width: 140px;
+  height: 55px;
+}
+.bar-pesquisa {
+  width: 100px;
+}
+.drop-section {
+  font-size: 1.2em;
+  width: 50;
+}
+
+@media(max-width: 768px) {
+  .centerNavBarOnSmallDevices {
+      display: flex!important;
+      justify-content: center!important;
+      align-items: center!important;
+      text-align: center!important;
+  }
+}
