@@ -99,3 +99,7 @@ input {
         width: 1200px!important;
     }
 }
+
+.img-radius {
+    border-radius: 4em;
+}
