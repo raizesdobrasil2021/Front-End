@@ -1,39 +1,50 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-
 .pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 span {
-  color:#642B18;
-  text-align:center;
-  font-size:15pt;
-  font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-} 
+    color: #642B18;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+}
+
 h1 {
-  font-size: 28pt;
-  color:#642B18;
-  font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
-  margin:3%
+    font-size: 28pt;
+    color: #642B18;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    margin: 3%
 }
-p{
-  font-size:16pt;
-  color:#642B18;
-  font-family: 'Open Sans', sans-serif;
+
+h5 {
+    font-size: 13pt;
+    color: #642B18;
+    font-weight: bold;
 }
-span{
-  font-size:12pt;
+
+p {
+    font-size: 12pt;
+    color: #642B18;
+    font-family: 'Open Sans', sans-serif;
 }
-.background-cores{
-  background-color:rgba(86,178,128,0.08);
+
+span {
+    font-size: 12pt;
 }
-.card-radius{
-  border-color: black;
-  border-radius: 1.3em;
+
+.background-cores {
+    background-color: rgba(86, 178, 128, 0.08);
+    border-radius: 1.3em;
 }
-.img-radius{
-  border-radius: 1.3em;
+
+.card-radius {
+    border-color: black;
+    border-radius: 1.3em;
+}
+
+.img-radius {
+    border-radius: 1.3em;
 }
