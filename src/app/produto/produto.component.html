@@ -3,34 +3,36 @@
     <div class="div">
 
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center mt-3 mb-3">
                 <h1>{{produto.categoria.descricao}}</h1>
             </div>
         </div>
     </div>
 
 
-    <div class="row d-flex align-item-center justify-content-around">
-        <div class="col-md-1 mb-5">
+    <div class="row d-flex align-item-center justify-content-center"id="tablet">
+        <div class="col-md-6 mb-5 text-center detalhes-produto">
             <img src="{{produto.imagem}}" alt="..." class="img-thumbnail imgradius">
         </div>
-        <div class="col-md-6 d-block">
+        <div class="col-md-4 d-block align-item-center detalhes-produto">
             <h2 class="card-title mb-5 text-center" id="preco">{{produto.nome}}</h2>
             <h3 class="">R${{produto.preco.toFixed(2).replace('.', ',')}}</h3>
 
-            <div class="row mt-5 d-flex">
-                <div class="col-md-6">
-                    <p class="card-text mt-3 text-center"> Quantidade disponível: {{produto.quantidade}}</p>
+            <div class="row mt-5 d-flex ">
+                <div class="col-md-6 align-item-center text-center">
+                    <p class="card-text qtd mt-3"> Quantidade disponível: {{produto.quantidade}}</p>
                 </div>
-                <div class="col-md-6">
-                    <button class="btn justify-content-center" data-toggle="modal" data-target="#exampleModalCenter" id="btn-2"><i class="fas fa-cart-plus mr-2"> </i>
-                         Adicionar ao carrinho
+                <div class="col-md-6 d-flex">
+                    <button class="btn justify-content-center mt-3" data-toggle="modal" data-target="#exampleModalCenter"
+                        id="btn-2"><i class="fas fa-cart-plus mr-2"> </i>
+                        Adicionar ao carrinho
                     </button>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-md-6">
-                    <p class="card-text dttexto text-center">Data de Validade : {{produto.dtValidade | date: "dd/MM/yyyy"}}
+                    <p class="card-text dttexto text-center">Data de Validade : {{produto.dtValidade | date:
+                        "dd/MM/yyyy"}}
                     </p>
                 </div>
             </div>
@@ -43,21 +45,23 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLongTitle">Raizes do Brasil</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body textoobg">
                 Obrigado, compra efetuada com sucesso!
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-1">fechar</button>
-                <button type="button" class="btn" routerLink="/todos-produtos" data-dismiss="modal" id="btn-2">continuar comprando</button>
+                <button type="button" class="btn" routerLink="/todos-produtos" data-dismiss="modal" id="btn-2">continuar
+                    comprando</button>
             </div>
         </div>
     </div>
