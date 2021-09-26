@@ -37,8 +37,30 @@
 
           </div>
         </div>
-        <a *ngIf="authService.logado()" class="btn ml-1"><i class="fas fa-shopping-cart"></i></a>
+        <a *ngIf="authService.logado()" class="btn ml-1" data-toggle="modal" data-target="#carrinho-aviso-menu"><i class="fas fa-shopping-cart"></i></a>
       </div>
     </div>
   </nav>
+</div>
+
+
+<div class="modal fade" id="carrinho-aviso-menu" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog center" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center
+                "id="exampleModalLongTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center textoobg">
+                O carrinho será adicionado em breve, obrigado, volte sempre :)
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-1">fechar</button>
+            </div>
+        </div>
+    </div>
 </div>

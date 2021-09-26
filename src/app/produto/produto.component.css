@@ -23,7 +23,7 @@
         text-align: center;
         color: #098905;
         font-weight: semi-bold;
-        font-size: 1.9rem;
+        font-size: 1.1rem;
         font-family: 'Poppins', sans-serif;
     }
     
@@ -53,14 +53,12 @@
         background-color: #078C03;
     }
     
-    .dttexto {
+    #dttexto {
         font-family: 'Poppins', sans-serif;
-        font-size: 1.2rem;
         color: #078C03
     }
-    .qtd{
+    #qtd{
         font-family: 'Poppins', sans-serif;
-        font-size: 1.4rem;
         color:#642B18
     }
     .imgradius {
@@ -128,3 +126,6 @@
         }
     }
 
+    #preco{
+        font-size:1.4rem 
+    }

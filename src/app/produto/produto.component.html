@@ -10,30 +10,34 @@
     </div>
 
 
-    <div class="row d-flex align-item-center justify-content-center"id="tablet">
+    <div class="row d-flex align-item-center justify-content-center" id="tablet">
         <div class="col-md-6 mb-5 text-center detalhes-produto">
             <img src="{{produto.imagem}}" alt="..." class="img-thumbnail imgradius">
         </div>
-        <div class="col-md-4 d-block align-item-center detalhes-produto">
-            <h2 class="card-title mb-5 text-center" id="preco">{{produto.nome}}</h2>
-            <h3 class="">R${{produto.preco.toFixed(2).replace('.', ',')}}</h3>
+        <div class="col-md-6 d-block align-item-center detalhes-produto">
+            <h2 class="card-title mb-5 text-center" id="">{{produto.nome}}</h2>
+            <h3 class=""id="preco">R${{produto.preco.toFixed(2).replace('.', ',')}}</h3>
 
             <div class="row mt-5 d-flex ">
                 <div class="col-md-6 align-item-center text-center">
-                    <p class="card-text qtd mt-3"> Quantidade disponível: {{produto.quantidade}}</p>
+                    <h3 class="card-text mt-3"id="qtd"> Quantidade disponível: {{produto.quantidade}}</h3>
                 </div>
                 <div class="col-md-6 d-flex">
-                    <button class="btn justify-content-center mt-3" data-toggle="modal" data-target="#exampleModalCenter"
-                        id="btn-2"><i class="fas fa-cart-plus mr-2"> </i>
+                    <button *ngIf="authService.logado()" class="btn justify-content-center mt-3" data-toggle="modal"
+                        data-target="#exampleModalCenterCompra" id="btn-2" ><i class="fas fa-cart-plus mr-2"> </i>
                         Adicionar ao carrinho
+                    </button>
+                    <button *ngIf="authService.deslogado()" class="btn justify-content-center mt-3" data-toggle="modal"
+                        data-target="#exampleModalCenterLogin" id="btn-2" ><i class="fas fa-cart-plus mr-2"> </i>
+                        Adicionar
                     </button>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-md-6">
-                    <p class="card-text dttexto text-center">Data de Validade : {{produto.dtValidade | date:
+                    <h3 class="card-text  text-center"id="dttexto">Data de Validade : {{produto.dtValidade | date:
                         "dd/MM/yyyy"}}
-                    </p>
+                    </h3>
                 </div>
             </div>
         </div>
@@ -45,12 +49,11 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+<div class="modal fade" id="exampleModalCenterCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Raizes do Brasil</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -62,6 +65,25 @@
                 <button type="button" class="btn btn-secondary" data-dismiss="modal" id="btn-1">fechar</button>
                 <button type="button" class="btn" routerLink="/todos-produtos" data-dismiss="modal" id="btn-2">continuar
                     comprando</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenterLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body textoobg">
+                Para prosseguir com compra, faça o login ou cadastre-se no nosso site. 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" routerLink="/login" data-dismiss="modal" id="btn-2">Login</button>
             </div>
         </div>
     </div>

@@ -22,7 +22,7 @@ export class ProdutoComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private authService: AuthService,
+    public authService: AuthService,
     private produtoService: ProdutoService,
     private categoriaService: CategoriaService,
 
