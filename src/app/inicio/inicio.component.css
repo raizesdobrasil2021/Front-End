@@ -1,216 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
 .carousel-inner .item {
-  height: 100px;
+    height: 100px;
 }
 
-.pointer{
-  cursor: pointer;
+.pointer {
+    cursor: pointer;
 }
 
 .edit-font-carousel {
-  font-family: "Ubuntu", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .carousel-caption {
-  margin-bottom: 100px;
-  background-color: rgba(248, 236, 236, 0.65);
-  box-shadow: 1px 1px 5px 0px rgba(248, 236, 236);
-  width: 99.5%;
-  height: auto;
-  left: .25% !important;
+    margin-bottom: 100px;
+    background-color: rgba(248, 236, 236, 0.65);
+    box-shadow: 1px 1px 5px 0px rgba(248, 236, 236);
+    width: 99.5%;
+    height: auto;
+    left: .25% !important;
 }
 
 .carousel-caption h2 {
-  font-size: 3em;
-  color: #a6641c;
-  font-weight: bold;
-  font-family: "Ubuntu", sans-serif;
+    font-size: 3em;
+    color: #a6641c;
+    font-weight: bold;
 }
 
 .carousel-caption h2 span {
-  color: #252f15;
-  font-weight: bold;
-  font-family: "Ubuntu", sans-serif;
+    color: #252f15;
+    font-weight: bold;
 }
 
 .carousel-caption h3 {
-  color: rgb(0, 0, 0);
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.2em;
-  text-align: center;
-  margin-right: 15%;
-  margin-left: 15%;
-  margin-bottom: 0;
-  text-indent: 2em;
+    color: rgb(0, 0, 0);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 0;
+    text-indent: 2em;
 }
 
 .carousel-caption h5 {
-  color: rgb(0, 0, 0);
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.3em;
-  text-align: center;
-  margin-right: 2%;
-  margin-left: 2%;
+    color: rgb(0, 0, 0);
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 .carousel-caption a {
-  background: rgba(37, 47, 21, 0.8);
-  padding: 1%;
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: -5px;
-  color: rgba(248, 236, 236);
-  text-transform: uppercase;
-  border-radius: 5px;
-  width: 10%;
+    background: rgba(37, 47, 21, 0.8);
+    padding: 1%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    color: rgba(248, 236, 236);
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: 10%;
 }
 
 .carousel {
-  position: relative;
+    position: relative;
 }
 
 .carousel-control-prev {
-  color: #252f15 !important;
+    color: #252f15 !important;
 }
 
 .carousel-control-next {
-  color: #252f15 !important;
+    color: #252f15 !important;
 }
 
 
 /* animação de aproximação de imagem */
+
 #carouselExampleIndicators .carousel-inner .carousel-item img {
-  height: 100vh;
-  width: 100px;
+    height: 100vh;
+    width: 100px;
 }
 
 .carousel-inner .carousel-item>img {
-  -webkit-animation: thing 20s;
-  -o-animation: thing 20s;
-  animation: thing 20s;
+    -webkit-animation: thing 20s;
+    -o-animation: thing 20s;
+    animation: thing 20s;
 }
 
 @keyframes thing {
-  from {
-    transform: scale(1, 1);
-  }
-
-  to {
-    transform: scale(1.25, 1.25);
-  }
+    from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.25, 1.25);
+    }
 }
 
 h1 {
-  margin: 5%;
-  text-align: center;
-  font-size: 2em;
-  font-family: "Ubuntu", sans-serif;
-  color: #642B18;
-  text-transform: uppercase;
-  font-weight: bold;
+    margin: 5%;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Open Sans", sans-serif;
+    color: #642B18;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .col-md-4 {
-  display: inline-block;
+    display: inline-block;
 }
 
 .col-md-4 img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 span.carousel-control-prev-icon {
-  position: relative;
-  bottom: 40px;
-  right: 40px;
+    position: relative;
+    bottom: 40px;
+    right: 40px;
 }
 
 span.carousel-control-next-icon {
-  position: relative;
-  bottom: 40px;
-  right: -40px;
+    position: relative;
+    bottom: 40px;
+    right: -40px;
 }
+
 .conheca{
   margin: 5%;
   text-align: center;
   font-size: 2em;
   font-family: "Ubuntu", sans-serif;
   color: #642B18 ;
-  text-transform: uppercase;
   font-weight: bold;
-
 }
+
+
 .categorias {
-  margin: 2%;
-  text-align: center;
-  font-size: 1.5em;
-  font-family: "Ubuntu", sans-serif;
-  color: #252f15 ;
-  text-transform: uppercase;
-  font-weight: bold;
+    margin: 2%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Open Sans", sans-serif;
+    color: #252f15;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .descricao {
-  text-align: center;
-  font-size: 1em;
-  font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
 }
+
 .preco {
-  text-align: center;
-  font-size: 1em;
-  font-weight: bold;
-  font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    color: #642B18
 }
-.edit-button{
-  margin-right: 50%;
+
+.edit-button {
+    margin-right: 50%;
 }
+
 .edit-a {
-  text-align: center;
-  font-size: 0.8em;
-  font-family: "Ubuntu", sans-serif;
-  color: #a6641c;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.edit-a:hover{
-  box-shadow: 1px 1px 5px #a6631c75;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: "Open Sans", sans-serif;
+    color: #a6641c;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.botao{
-  text-align: center;
+.edit-a:hover {
+    box-shadow: 1px 1px 5px #a6631c75;
 }
 
-.carousel-button{
-font-size: 35px;
+.botao {
+    text-align: center;
+}
+
+.carousel-button {
+    font-size: 35px;
 }
 
 .parag1 {
-  text-align: justify;
-  font-size: 1em;
-  font-family: "Open Sans", sans-serif;
-  padding-left: 5%;
-  padding-right: 5%;
+    text-align: justify;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
-}
 .parag2 {
-  text-align: justify;
-  font-size: 1em;
-  font-family: "Open Sans", sans-serif;
-  padding-left: 5%;
-  padding-right: 5%;
+    text-align: justify;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-.edit-img{
-  object-fit: cover;
-  object-position: top;
+
+.edit-img {
+    object-fit: cover;
+    object-position: top;
 }
 
 i .carousel-button {
-  margin-right: -80px;
+    margin-right: -80px;
 }
 
 .tamIconsCat {
-  font-size: 2em;
-  color: #a6641c
+    font-size: 2em;
+    color: #a6641c
 }
-.border  {
-  cursor: pointer;
+
+.border {
+    cursor: pointer;
+    font-size: 2em;
+    color: #a6641c
+}
+
+.card img {
+    max-width: 348px;
+    max-height: 348px;
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-weight: bold;
+    color: #642B18;
+    font-size: 1.4rem;
+}
+
+#letra-card {
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: semi-bold;
+    color: #095d07
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: #a30461
+}
+
+#categoria {
+    font-size: 0.9rem;
+    color: #095d07;
+}
+
+#btn-1 {
+    margin: auto;
+    color: white;
+    background-color: #642B18;
+}
+
+#btn-2 {
+    margin: auto;
+    color: white;
+    background-color: #095d07;
+}
+
+#btn-1:hover {
+    background-color: #3a1509
+}
+
+#btn-2:hover {
+    background-color: #033101
+}
+
+.cardcor {
+    background-color: rgba(192, 233, 216, 100);
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+#produtos-link {
+    padding: 0%;
 }

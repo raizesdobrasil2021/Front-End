@@ -17,7 +17,6 @@ export class InicioComponent implements OnInit {
   produto: ProdutoReq = new ProdutoReq()
   listaProduto: ProdutoReq[]
 
-
   categoria: CategoriaReq = new CategoriaReq()
   idCategoria: number
   listaCategoria: CategoriaReq[]

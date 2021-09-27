@@ -76,16 +76,19 @@ input {
 
 /* Responsividade CSS */
 
-@media (min-width: 576px) {
+@media (max-width: 800px) {
     .container {
-        width: 576px!important;
+        width: 100%!important;
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 768px!important;
-    }
+.imagemfundo {
+  background-image: url("https://i.imgur.com/eQXM61K.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  margin: 0 !important;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -98,4 +101,8 @@ input {
     .container {
         width: 1200px!important;
     }
+}
+
+.img-radius {
+    border-radius: 4em;
 }

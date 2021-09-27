@@ -14,14 +14,13 @@
     <div class="row">
         <div class="col-sm-4 mb-3" *ngFor="let produto of categoria.produto">
             <div class="border card cardcor card-radius" [routerLink]="['/produto', produto.id]">
-                    <img class="img-fluid img-radius" alt="Imagem do produto"  src="{{produto.imagem}}">
+                <img class="img-fluid img-radius" alt="Imagem do produto" src="{{produto.imagem}}">
                 <div class="card-body text-center">
                     <h2 class="nome">{{produto.nome}}</h2>
                     <p id="preco">R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
-                    <a class="btn"id="btn-2">Ver</a>
+                    <a class="btn" id="btn-2">Ver</a>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
