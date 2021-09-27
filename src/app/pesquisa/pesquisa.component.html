@@ -3,7 +3,7 @@
     <div class="row mb-5">
         <div class="col-md-12">
             <h1 class="text-center titulo">Pesquisa por </h1>
-            <h2 class="text-center busca">"{{busca}}"</h2>
+            <h2 class="text-center busca">"{{busca}}</h2>
         </div>
     </div>
 
@@ -22,9 +22,11 @@
                             <p class="preco">R$ {{produto.preco.toFixed(2).replace('.', ',')}}</p>
                         </div>
                         <div class="col-md-6">
-                            <a class="btn" id="btn-2" [routerLink]="['/produto/produto.id']">Ver produto</a>
+                            <a class="btn" id="btn-2" [routerLink]="['/produto',produto.id]">Ver produto</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>

@@ -2,8 +2,8 @@
 
     <div class="div">
 
-        <div class="row">
-            <div class="col-md-12 text-center mt-3 mb-3">
+        <div class="row mt-5">
+            <div class="col-md-12 text-center mt-3">
                 <h1>{{produto.categoria.descricao}}</h1>
             </div>
         </div>
@@ -16,27 +16,24 @@
         </div>
         <div class="col-md-6 d-block align-item-center detalhes-produto">
             <h2 class="card-title mb-5 text-center" id="">{{produto.nome}}</h2>
-            <h3 class=""id="preco">R${{produto.preco.toFixed(2).replace('.', ',')}}</h3>
+            <h3 class="" id="preco">R${{produto.preco.toFixed(2).replace('.', ',')}}</h3>
 
             <div class="row mt-5 d-flex ">
                 <div class="col-md-6 align-item-center text-center">
-                    <h3 class="card-text mt-3"id="qtd"> Quantidade disponível: {{produto.quantidade}}</h3>
+                    <h3 class="card-text mt-3" id="qtd"> Quantidade disponível: {{produto.quantidade}}</h3>
                 </div>
                 <div class="col-md-6 d-flex">
-                    <button *ngIf="authService.logado()" class="btn justify-content-center mt-3" data-toggle="modal"
-                        data-target="#exampleModalCenterCompra" id="btn-2" ><i class="fas fa-cart-plus mr-2"> </i>
+                    <button *ngIf="authService.logado()" class="btn justify-content-center mt-3" data-toggle="modal" data-target="#exampleModalCenterCompra" id="btn-2"><i class="fas fa-cart-plus mr-2"> </i>
                         Adicionar 
                     </button>
-                    <button *ngIf="authService.deslogado()" class="btn justify-content-center mt-3" data-toggle="modal"
-                        data-target="#exampleModalCenterLogin" id="btn-2" ><i class="fas fa-cart-plus mr-2"> </i>
+                    <button *ngIf="authService.deslogado()" class="btn justify-content-center mt-3" data-toggle="modal" data-target="#exampleModalCenterLogin" id="btn-2"><i class="fas fa-cart-plus mr-2"> </i>
                         Adicionar
                     </button>
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-md-6">
-                    <h3 class="card-text  text-center"id="dttexto">Data de Validade : {{produto.dtValidade | date:
-                        "dd/MM/yyyy"}}
+                    <h3 class="card-text  text-center" id="dttexto">Data de Validade : {{produto.dtValidade | date: "dd/MM/yyyy"}}
                     </h3>
                 </div>
             </div>
@@ -49,8 +46,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenterCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
+<div class="modal fade" id="exampleModalCenterCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -70,8 +66,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="exampleModalCenterLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
+<div class="modal fade" id="exampleModalCenterLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -80,7 +75,7 @@
                 </button>
             </div>
             <div class="modal-body textoobg">
-                Para prosseguir com compra, faça o login ou cadastre-se no nosso site. 
+                Para prosseguir com compra, faça o login ou cadastre-se no nosso site.
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn" routerLink="/login" data-dismiss="modal" id="btn-2">Login</button>
