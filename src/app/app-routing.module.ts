@@ -11,7 +11,7 @@ import { MeusProdutosComponent } from './meus-produtos/meus-produtos.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { TodosProdutosComponent } from './todos-produtos/todos-produtos.component';
-
+import {PesquisaComponent } from './pesquisa/pesquisa.component';
 const routes: Routes = [
   {path:'', redirectTo:'meus-produtos', pathMatch: 'full'},
   {path:'login', component: LoginComponent},
@@ -26,6 +26,7 @@ const routes: Routes = [
   {path: 'produto-edit/:id',component: ProdutoEditComponent},
   {path: 'produto-delete/:id',component: ProdutoDeleteComponent},
   {path: 'sobre-nos',component: SobreNosComponent},
+  {path:'pesquisa/:busca',component:PesquisaComponent}
 
 ];
 

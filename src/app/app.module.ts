@@ -22,6 +22,7 @@ import { CurrencyMaskModule } from 'ng2-currency-mask';
 /*Material pasta separada */
 import { MaterialModule } from './material/material.module';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
 
 
 
@@ -41,6 +42,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
     ProdutoDeleteComponent,
     MeusProdutosComponent,
     SobreNosComponent,
+    PesquisaComponent,
   ],
   imports: [
     BrowserModule,

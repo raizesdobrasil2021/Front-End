@@ -35,27 +35,27 @@ export class MenuComponent implements OnInit {
     private produtoService: ProdutoService
   ) { }
 
-  ngOnInit(){ }
+  ngOnInit() { }
 
-  refresh2(idCat: number){
-    this.router.navigateByUrl('/home', { skipLocationChange: true }).then(() =>{
-         this.router.navigate(['/categoria',idCat])
+  refresh2(idCat: number) {
+    this.router.navigateByUrl('/inicio', { skipLocationChange: true }).then(() => {
+      this.router.navigate(['/categoria', idCat])
     })
   }
 
-  refresh(){
-      this.router.navigateByUrl('/home', { skipLocationChange: true }).then(() =>{
-           this.router.navigate(["/pesquisa",this.busca])
-      })
+  refresh() {
+    this.router.navigateByUrl('/inicio', { skipLocationChange: true }).then(() => {
+      this.router.navigate(["/pesquisa", this.busca])
+    })
   }
-    sair () {
-      environment.token = ""
-      environment.nome = ""
-      environment.id = 0
-      environment.tipo = ""
-      this.router.navigate(["/home"])
-      alert("Sessão finalizada")
-    }
+  sair() {
+    environment.token = ""
+    environment.nome = ""
+    environment.id = 0
+    environment.tipo = ""
+    this.router.navigate(["/home"])
+    alert("Sessão finalizada")
+  }
 
-  }
+}
 
