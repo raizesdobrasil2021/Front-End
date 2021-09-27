@@ -13,7 +13,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { TodosProdutosComponent } from './todos-produtos/todos-produtos.component';
 import {PesquisaComponent } from './pesquisa/pesquisa.component';
 const routes: Routes = [
-  {path:'', redirectTo:'meus-produtos', pathMatch: 'full'},
+  {path:'', redirectTo:'inicio', pathMatch: 'full'},
   {path:'login', component: LoginComponent},
   {path:'cadastro', component: CadastroComponent},
   {path:'inicio',component: InicioComponent},
