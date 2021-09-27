@@ -129,15 +129,14 @@ span.carousel-control-next-icon {
     right: -40px;
 }
 
-.conheca{
-  margin: 5%;
-  text-align: center;
-  font-size: 2em;
-  font-family: "Ubuntu", sans-serif;
-  color: #642B18 ;
-  font-weight: bold;
+.conheca {
+    margin: 5%;
+    text-align: center;
+    font-size: 2em;
+    font-family: "Ubuntu", sans-serif;
+    color: #642B18;
+    font-weight: bold;
 }
-
 
 .categorias {
     margin: 2%;
@@ -190,7 +189,7 @@ span.carousel-control-next-icon {
 
 .parag1 {
     text-align: justify;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: "Open Sans", sans-serif;
     padding-left: 5%;
     padding-right: 5%;
@@ -198,7 +197,7 @@ span.carousel-control-next-icon {
 
 .parag2 {
     text-align: justify;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: "Open Sans", sans-serif;
     padding-left: 5%;
     padding-right: 5%;
