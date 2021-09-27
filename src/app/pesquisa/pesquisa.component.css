@@ -5,3 +5,7 @@
     font-family: "Open Sans", sans-serif;
     color: #642B18
 }
+
+.container {
+    min-height: 68vh;
+}
