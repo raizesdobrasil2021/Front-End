@@ -288,3 +288,14 @@ h1 {
 #produtos-link {
     padding: 0%;
 }
+
+.recuo {
+    padding: 15%;
+    padding-top: 1% !important;
+    padding-bottom: 3% !important;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    text-indent: 2em;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+}
